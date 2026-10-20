@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { Layers, Globe, Rocket, Search, ShoppingCart, Wrench, ArrowRight, Mail, Phone } from 'lucide-react'
+import logo from './assets/logo.svg'
 
 const Instagram = ({ size = 20 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -39,7 +40,7 @@ export default function App() {
       <div className="wrap">
         <nav className="nav">
           <a href="#top" className="brand">
-            <img className="logo" src="/logo.svg" alt="Gradient Infosolutions" />
+            <img className="logo" src={logo} alt="Gradient Infosolutions" />
           </a>
           <div className="links">
             <a href="#services">Services</a>
@@ -112,7 +113,6 @@ export default function App() {
 
         <footer>
           <span>© {new Date().getFullYear()} Gradient Infosolutions. All rights reserved.</span>
-          <a href={INSTAGRAM} target="_blank" rel="noreferrer" className="social"><Instagram size={18} /> Follow us on Instagram</a>
         </footer>
       </div>
     </>

@@ -23,7 +23,7 @@ a { color: inherit; text-decoration: none; }
 
 .nav { display: flex; align-items: center; justify-content: space-between; padding: 22px 0; border-bottom: 1px solid var(--line); }
 .brand { display: flex; align-items: center; gap: 14px; font-weight: 700; font-size: 22px; }
-.logo { height: 104px; width: auto; display: block; margin: -26px 0 -26px -14px; }
+.logo { height: 58px; width: auto; display: block; }
 .links { display: flex; gap: 30px; align-items: center; color: var(--muted); font-size: 16px; }
 .links a:hover { color: var(--ink); }
 .btn { display: inline-flex; align-items: center; gap: 8px; background: var(--blue); color: #fff !important; padding: 13px 24px; border-radius: 999px; font-weight: 500; border: 0; font: inherit; cursor: pointer; transition: transform .2s, box-shadow .2s; }
@@ -69,7 +69,7 @@ section { padding: 96px 0; }
 .contact .cta { position: relative; }
 .contact .btn.ghost { color: #fff !important; border-color: #4b3a68; }
 
-footer { padding: 36px 0; color: var(--muted); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: 15px; }
+footer { padding: 36px 0; color: var(--muted); display: flex; justify-content: center; text-align: center; flex-wrap: wrap; gap: 12px; font-size: 15px; }
 
 @media (max-width: 900px) {
   .grid, .steps { grid-template-columns: 1fr 1fr; }
