@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Layers, Globe, Rocket, Search, ShoppingCart, Wrench, ArrowRight, Mail, Phone } from 'lucide-react'
-import logo from './assets/logo.svg'
+import emblem from './assets/emblem.svg'
 
 const Instagram = ({ size = 20 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -40,7 +40,11 @@ export default function App() {
       <div className="wrap">
         <nav className="nav">
           <a href="#top" className="brand">
-            <img className="logo" src={logo} alt="Gradient Infosolutions" />
+            <img className="logo" src={emblem} alt="" />
+            <span className="wordmark">
+              <span>gradient</span>
+              <small>infosolutions</small>
+            </span>
           </a>
           <div className="links">
             <a href="#services">Services</a>

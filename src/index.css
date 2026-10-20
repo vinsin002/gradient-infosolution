@@ -23,7 +23,10 @@ a { color: inherit; text-decoration: none; }
 
 .nav { display: flex; align-items: center; justify-content: space-between; padding: 22px 0; border-bottom: 1px solid var(--line); }
 .brand { display: flex; align-items: center; gap: 14px; font-weight: 700; font-size: 22px; }
-.logo { height: 104px; width: auto; display: block; margin: -26px 0 -26px -14px; }
+.logo { height: 56px; width: 56px; display: block; }
+.wordmark { display: flex; flex-direction: column; line-height: 1; font-family: "DM Sans", sans-serif; font-weight: 400; }
+.wordmark span { font-size: 36px; letter-spacing: -0.03em; color: #38264F; }
+.wordmark small { font-size: 15px; letter-spacing: 0.02em; color: #705C8C; margin: 4px 0 0 auto; }
 .links { display: flex; gap: 30px; align-items: center; color: var(--muted); font-size: 16px; }
 .links a:hover { color: var(--ink); }
 .btn { display: inline-flex; align-items: center; gap: 8px; background: var(--blue); color: #fff !important; padding: 13px 24px; border-radius: 999px; font-weight: 500; border: 0; font: inherit; cursor: pointer; transition: transform .2s, box-shadow .2s; }
@@ -88,3 +91,4 @@ h1, h2, h3, p { text-wrap: balance; }
 @media (min-width: 640px) {
   .sec-head p { max-width: none; white-space: nowrap; }
 }
+@media (max-width: 640px) { .wordmark { display: none; } }
