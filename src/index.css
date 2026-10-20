@@ -84,3 +84,7 @@ footer { padding: 36px 0; color: var(--muted); display: flex; justify-content: s
 .hero-inner { width: 100%; display: flex; flex-direction: column; align-items: center; }
 .social { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); }
 .social:hover { color: var(--blue); }
+h1, h2, h3, p { text-wrap: balance; }
+@media (min-width: 640px) {
+  .sec-head p { max-width: none; white-space: nowrap; }
+}
