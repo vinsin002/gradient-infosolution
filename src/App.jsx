@@ -1,6 +1,17 @@
 import { motion } from 'framer-motion'
 import { Layers, Globe, Rocket, Search, ShoppingCart, Wrench, ArrowRight, Mail, Phone } from 'lucide-react'
 
+const Instagram = ({ size = 20 }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <rect x="3" y="3" width="18" height="18" rx="5" />
+    <circle cx="12" cy="12" r="4" />
+    <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" />
+  </svg>
+)
+
+// TODO: replace with the real Instagram profile URL
+const INSTAGRAM = 'https://www.instagram.com/gradientinfosolutions'
+
 const services = [
   { icon: Globe, title: 'Business Websites', text: 'Clean, fast and mobile-first sites that present your brand with confidence.' },
   { icon: ShoppingCart, title: 'E-commerce Stores', text: 'Online shops with smooth checkout, inventory and payment integrations.' },
@@ -28,8 +39,7 @@ export default function App() {
       <div className="wrap">
         <nav className="nav">
           <a href="#top" className="brand">
-            <span className="logo"><Layers size={26} /></span>
-            Gradient Infosolution
+            <img className="logo" src="/logo.svg" alt="Gradient Infosolutions" />
           </a>
           <div className="links">
             <a href="#services">Services</a>
@@ -42,7 +52,7 @@ export default function App() {
           <motion.div className="hero-inner" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <div className="eyebrow">Websites for growing businesses</div>
             <h1>Your business, made visible.</h1>
-            <p>Gradient Infosolution designs and builds fast, beautiful websites that are clear, useful, and unmistakably yours.</p>
+            <p>Gradient Infosolutions designs and builds fast, beautiful websites that are clear, useful, and unmistakably yours.</p>
             <div className="cta">
               <a href="#contact" className="btn">Start your project <ArrowRight size={18} /></a>
               <a href="#services" className="btn ghost">See what we do</a>
@@ -93,15 +103,16 @@ export default function App() {
             <h2>Ready to get your business online?</h2>
             <p>Tell us about your idea and we'll get back with a plan within one business day.</p>
             <div className="cta">
-              <a href="mailto:hello@gradientinfosolution.com" className="btn"><Mail size={18} /> Email us</a>
+              <a href="mailto:hello@gradientinfosolutions.com" className="btn"><Mail size={18} /> Email us</a>
               <a href="tel:+910000000000" className="btn ghost"><Phone size={18} /> Call us</a>
+              <a href={INSTAGRAM} target="_blank" rel="noreferrer" className="btn ghost"><Instagram size={18} /> Instagram</a>
             </div>
           </motion.div>
         </section>
 
         <footer>
-          <span>© {new Date().getFullYear()} Gradient Infosolution. All rights reserved.</span>
-          <span>Websites that work as hard as you do.</span>
+          <span>© {new Date().getFullYear()} Gradient Infosolutions. All rights reserved.</span>
+          <a href={INSTAGRAM} target="_blank" rel="noreferrer" className="social"><Instagram size={18} /> Follow us on Instagram</a>
         </footer>
       </div>
     </>
